@@ -1,13 +1,15 @@
 function startMenu() {
     var act = document.querySelectorAll('.sidebar ul li a');
-    var url = document.baseURI;
+    var url = document.baseURI.split('/').slice(-1).toLocaleString();
 
     act.forEach(element => {
-        if (url === element.href) {
+        var href;
+        href = element.href.split('/').slice(-1).toLocaleString();
+
+        if (url === href) {
             element.classList.add('nova');
             var elant = element.closest('ul');
             var className = element.closest('li').className;
-            console.log(className)
             if (className == 'sub not-show') {
                 elant.querySelectorAll('.sub').forEach(e => { e.classList.remove('not-show') })
                 elant.querySelectorAll('span').forEach(e => { e.classList.add('sub-select') })
@@ -17,7 +19,7 @@ function startMenu() {
     })
 }
 
-function myFunction(el) {
+function trocarClass(el) {
     el = 'ul.' + el + ' li' + '.sub';
     var sub = document.querySelectorAll(el);
 

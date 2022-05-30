@@ -1,9 +1,12 @@
+/* RESET GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
 }
+
+/* CONFIG TAMANHO DA FONTE */
 body{
     font-size: 0.8em;
 }
@@ -13,6 +16,7 @@ body{
     flex-direction: row;
     width: 100%;
     height: 100%;
+    border:solid 3px red;
   
 }
 
