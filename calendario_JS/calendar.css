@@ -16,7 +16,7 @@ html{
     color:#eee;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:;
 }
 
 .calendar{
@@ -98,3 +98,42 @@ html{
 .today{
     background-color: #167e56;
 }
+
+.agendaDiaria{
+    width: 45rem;
+    height:100%;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.headerDiaria{
+    width: 100%;
+    height: 3rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    text-shadow:0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+.horaAhora{
+    width: 100%;
+    height:auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+  
+}
+.caixaHora{
+    width: 98%;
+    height: 4rem;
+   background-color: #424247;
+   margin: 0.2rem;
+}
+span{
+    font-size:1.5rem;
+}
+
